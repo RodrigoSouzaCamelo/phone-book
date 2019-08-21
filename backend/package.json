@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend done on nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoSouzaCamelo/phone-book.git"
+  },
+  "author": "Rodrigo Souza Camelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoSouzaCamelo/phone-book/issues"
+  },
+  "homepage": "https://github.com/RodrigoSouzaCamelo/phone-book#readme",
+  "dependencies": {
+  }
+}
