@@ -1,50 +1,33 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer v-model="drawer" app>
-      <v-list dense>
-        <v-list-item @click>
-          <v-list-item-action>
-            <v-icon>home</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item @click>
-          <v-list-item-action>
-            <v-icon>contact_mail</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <navigation-drawer></navigation-drawer>
 
-    <v-app-bar app color="indigo" dark>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>PhoneBook</v-toolbar-title>
-    </v-app-bar>
+    <app-bar></app-bar>
 
     <v-content>
       <v-container class="fill-height" fluid>
         
       </v-container>
     </v-content>
-    <v-footer color="indigo" app>
-      <span class="white--text">&copy; 2019</span>
-    </v-footer>
+
+    <app-footer></app-footer>
+    
   </v-app>
 </template>
 
 <script>
+import Footer from './components/Footer';
+import NavigationBar from './components/NavigationBar';
+import AppBar from './components/AppBar';
 
 export default {
   name: "App",
   components: {
+    'app-footer': Footer,
+    'navigation-drawer': NavigationBar,
+    'app-bar': AppBar
   },
   data: () => ({
-    drawer: null
   })
 };
 </script>
