@@ -2,7 +2,7 @@
 <v-navigation-drawer v-model="isDrawerOpened" app>
       <v-list dense>
 
-        <v-list-item @click>
+        <v-list-item @click="goToHome()">
           <v-list-item-action>
             <v-icon>home</v-icon>
           </v-list-item-action>
@@ -11,7 +11,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item @click>
+        <v-list-item @click="goToContacts()">
           <v-list-item-action>
             <v-icon>contact_mail</v-icon>
           </v-list-item-action>
@@ -31,7 +31,14 @@ export default {
     data: () => ({
       isDrawerOpened: false
     }),
-    methods: { },
+    methods: { 
+      goToHome() {
+        this.$router.push('/');
+      },
+      goToContacts() {
+        this.$router.push('/contacts');
+      }
+    },
     created() {
         EventBus.$on('openOrCloseDrawer', (isDrawerOpened) => {
             this.isDrawerOpened = isDrawerOpened;
