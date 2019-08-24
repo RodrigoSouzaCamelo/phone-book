@@ -29,7 +29,7 @@ import EventBus from '../util/eventBus.js';
 
 export default {
     data: () => ({
-      isDrawerOpened: null
+      isDrawerOpened: false
     }),
     methods: { },
     created() {
