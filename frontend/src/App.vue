@@ -4,14 +4,9 @@
 
     <core-app-bar></core-app-bar>
 
-    <v-content>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
-    </v-content>
+    <core-view></core-view>   
 
-    <core-footer></core-footer>
-    
+    <core-footer></core-footer> 
   </v-app>
 </template>
 
@@ -21,8 +16,8 @@ export default {
   components: {
     CoreFooter: () => import('./components/core/Footer'),
     CoreDrawer: () => import('./components/core/Drawer'),
-    CoreAppBar: () => import('./components/core/AppBar')
-  },
-  data: () => ({  })
+    CoreAppBar: () => import('./components/core/AppBar'),
+    CoreView: () => import('./components/core/View')
+  }
 };
 </script>
