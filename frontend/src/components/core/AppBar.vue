@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import EventBus from '../util/eventBus.js';
+import EventBus from '../../util/eventBus.js';
 
 export default {
     data: () => ({ 

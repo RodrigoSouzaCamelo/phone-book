@@ -1,8 +1,8 @@
 <template>
   <v-app id="inspire">
-    <navigation-drawer></navigation-drawer>
+    <core-drawer></core-drawer>
 
-    <app-bar></app-bar>
+    <core-app-bar></core-app-bar>
 
     <v-content>
       <v-container fluid>
@@ -10,24 +10,19 @@
       </v-container>
     </v-content>
 
-    <app-footer></app-footer>
+    <core-footer></core-footer>
     
   </v-app>
 </template>
 
 <script>
-import Footer from './components/Footer';
-import NavigationBar from './components/NavigationBar';
-import AppBar from './components/AppBar';
-
 export default {
   name: "App",
   components: {
-    'app-footer': Footer,
-    'navigation-drawer': NavigationBar,
-    'app-bar': AppBar
+    CoreFooter: () => import('./components/core/Footer'),
+    CoreDrawer: () => import('./components/core/Drawer'),
+    CoreAppBar: () => import('./components/core/AppBar')
   },
-  data: () => ({
-  })
+  data: () => ({  })
 };
 </script>
