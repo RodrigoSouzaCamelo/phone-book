@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app color="indigo" dark>
+    <v-app-bar app color="primary" dark>
       <v-app-bar-nav-icon @click.stop="openOrCloseDrawer()"></v-app-bar-nav-icon>
       <v-toolbar-title>PhoneBook</v-toolbar-title>
     </v-app-bar>
