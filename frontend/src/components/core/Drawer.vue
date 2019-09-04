@@ -33,7 +33,7 @@ export default {
     }),
     methods: { 
       goToHome() {
-        this.$router.push('/');
+        this.$router.push('/home');
       },
       goToContacts() {
         this.$router.push('/contacts');
